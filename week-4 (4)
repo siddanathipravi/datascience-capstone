@@ -1,0 +1,30 @@
+Data
+
+To  solve the problems, we will need the following data:
+
+1)	List of neighborhoods in Kuala Lumpur, This defines the scope of this project which is confines to the city of Kuala Lumpur , the capital city of the country of Malaysia in South East Asia.
+
+2)	Latitudes and longitudes coordinates of those neighborhoods. This is required in order to plot the map and also to get the venue data
+
+3)	Venue data, particularly data related to shopping malls. We will use this data to perform clustering on the neibourhoods.
+Sources of data and methods to extract them:  
+
+This Wikipedia page (https://en.wikipedia.org/wiki/Category:Kuala_Lumpur) contains a list of neighbourhood in Kuala  Lumpur, with the  total  of  
+
+70 neighbourhoods. We  will use web scraping techniques   to extract the data from wiki page, with the help of python requests and beautiful 
+
+packages . They will get the geography coordinates of the neighbourhoods using python geography packages which will give us the latitude and 
+
+longitude coordinate of the neighbourhoods.
+
+After that, we will use Foursquare API to get the venue data for those neighbourhoods. Foursquare has one of the largest database of 105+million 
+
+places and is used by over 125,000developers. Foursquare API will provide many categories of the venue data, we are participating interested in the 
+
+shopping mall category in order to help us to solve the business problem put forward .This is a project  that will make use of many data science  
+
+skill , from web scraping(Wikipedia) , working with API (Foursquare), data wrangling, to machine learning (K-means clustering ) and map 
+
+visualization(Folium). In the next section , we will present the methodology section where we will discuss the steps taken in this project, the 
+
+data and the machine learning techniques that was used. 
